@@ -1,0 +1,1224 @@
+{
+  "description": "Cross-language determinism fixture for the frozen bucketing hash (MurmurHash3_x86_32, seed 0). Every SDK must reproduce expected_variant for each case. See contracts/bucketing.md.",
+  "hash": "MurmurHash3_x86_32",
+  "seed": 0,
+  "key_format": "{salt}:{user_id}:{experiment_id} (UTF-8)",
+  "cases": [
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-0",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 514,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-1",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 866,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-2",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 602,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-3",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 313,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-4",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 185,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-5",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 319,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-6",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 673,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-7",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 585,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-0",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 514,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-1",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 866,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-2",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 2602,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-3",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 4313,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-4",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 5185,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-5",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 3319,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-6",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 5673,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-fifty_fifty",
+      "user_id": "user-7",
+      "experiment_id": "exp_fifty_fifty",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 50
+        },
+        {
+          "variant": "treatment",
+          "weight": 50
+        }
+      ],
+      "bucket": 7585,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-0",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 476,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-1",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 801,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-2",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 440,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-3",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 477,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-4",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 155,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-5",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 176,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-6",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 885,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-7",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 286,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-0",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 476,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-1",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 801,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-2",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 3440,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-3",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 9477,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-4",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 7155,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-5",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 3176,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-6",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 8885,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninety_ten",
+      "user_id": "user-7",
+      "experiment_id": "exp_ninety_ten",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 90
+        },
+        {
+          "variant": "treatment",
+          "weight": 10
+        }
+      ],
+      "bucket": 8286,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-0",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 710,
+      "expected_variant": "treatment_a"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-1",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 870,
+      "expected_variant": "treatment_b"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-2",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 820,
+      "expected_variant": "treatment_a"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-3",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 860,
+      "expected_variant": "treatment_b"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-4",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 667,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-5",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 472,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-6",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 452,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-7",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 249,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-0",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 6710,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-1",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 4870,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-2",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 9820,
+      "expected_variant": "treatment_b"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-3",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 5860,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-4",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 7667,
+      "expected_variant": "treatment_a"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-5",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 5472,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-6",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 2452,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-seventy_fifteen_fifteen",
+      "user_id": "user-7",
+      "experiment_id": "exp_seventy_fifteen_fifteen",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 70
+        },
+        {
+          "variant": "treatment_a",
+          "weight": 15
+        },
+        {
+          "variant": "treatment_b",
+          "weight": 15
+        }
+      ],
+      "bucket": 2249,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-0",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 560,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-1",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 311,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-2",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 767,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-3",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 553,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-4",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 801,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-5",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 17,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-6",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 992,
+      "expected_variant": "treatment"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-7",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 1000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 507,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-0",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 3560,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-1",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 2311,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-2",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 7767,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-3",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 2553,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-4",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 2801,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-5",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 2017,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-6",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 4992,
+      "expected_variant": "control"
+    },
+    {
+      "salt": "salt-ninetynine_one",
+      "user_id": "user-7",
+      "experiment_id": "exp_ninetynine_one",
+      "bucket_count": 10000,
+      "allocation": [
+        {
+          "variant": "control",
+          "weight": 99
+        },
+        {
+          "variant": "treatment",
+          "weight": 1
+        }
+      ],
+      "bucket": 6507,
+      "expected_variant": "control"
+    }
+  ]
+}
