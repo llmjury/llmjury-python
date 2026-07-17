@@ -3,7 +3,7 @@ name: Release to PyPI
 # Publishes when a GitHub release is published (tag format: v0.1.0).
 #
 # Uses PyPI Trusted Publishing (OIDC) — no long-lived token stored in the repo.
-# One-time setup on pypi.org: project "llmjury" -> Publishing -> add GitHub publisher
+# One-time setup on pypi.org: project "llmjury-sdk" -> Publishing -> add GitHub publisher
 # (owner: llmjury, repo: llmjury-python, workflow: release.yml, environment: pypi).
 
 on:

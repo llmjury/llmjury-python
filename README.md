@@ -1,8 +1,8 @@
 # LLMJury Python SDK
 
 [![CI](https://github.com/llmjury/llmjury-python/actions/workflows/ci.yml/badge.svg)](https://github.com/llmjury/llmjury-python/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/llmjury)](https://pypi.org/project/llmjury/)
-[![Python](https://img.shields.io/pypi/pyversions/llmjury)](https://pypi.org/project/llmjury/)
+[![PyPI](https://img.shields.io/pypi/v/llmjury-sdk)](https://pypi.org/project/llmjury-sdk/)
+[![Python](https://img.shields.io/pypi/pyversions/llmjury-sdk)](https://pypi.org/project/llmjury-sdk/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 The official Python SDK for [LLMJury](https://llmjury.com) — run LLM experiments in production.
@@ -26,7 +26,7 @@ wins — and when you have enough data to trust it.
 ## Installation
 
 ```bash
-pip install llmjury
+pip install llmjury-sdk
 ```
 
 Python 3.8+. **Zero runtime dependencies** — the SDK uses only the standard library.

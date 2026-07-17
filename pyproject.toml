@@ -1,5 +1,7 @@
 [project]
-name = "llmjury"
+# Distribution name is llmjury-sdk (PyPI blocks "llmjury" as too similar to the unrelated
+# pre-existing "llm-jury" project); the import name remains `llmjury`.
+name = "llmjury-sdk"
 version = "0.1.0"
 description = "Official Python SDK for LLMJury — run LLM experiments in production: deterministic variant assignment, prompt/model comparison, and non-blocking metrics tracking."
 readme = "README.md"
