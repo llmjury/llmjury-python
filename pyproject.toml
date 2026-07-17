@@ -1,0 +1,63 @@
+[project]
+name = "llmjury"
+version = "0.1.0"
+description = "Official Python SDK for LLMJury — run LLM experiments in production: deterministic variant assignment, prompt/model comparison, and non-blocking metrics tracking."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [{ name = "LLMJury", email = "support@llmjury.com" }]
+keywords = [
+    "llm",
+    "experimentation",
+    "ab-testing",
+    "feature-flags",
+    "prompt-engineering",
+    "observability",
+    "evaluation",
+    "statistics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+# Zero required runtime dependencies — the default transport uses only the standard library.
+dependencies = []
+
+[project.urls]
+Homepage = "https://llmjury.com"
+Documentation = "https://llmjury.com/docs"
+Repository = "https://github.com/llmjury/llmjury-python"
+Issues = "https://github.com/llmjury/llmjury-python/issues"
+Changelog = "https://github.com/llmjury/llmjury-python/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = ["ruff", "black", "pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[tool.setuptools.package-data]
+llmjury = ["py.typed"]
